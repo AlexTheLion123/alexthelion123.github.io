@@ -8,16 +8,16 @@
 }
 
 nav {
-    height: 80px;
-    background: #11264cff;
+    height: 300px;
+    background: url('https://reapchain.com/assets/img/sub_visual.jpg') no-repeat center;
+    background-size: cover;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0px 50px 0px 100px;
+    align-items: flex-start;
 }
 
 nav .logo {
-    font-size: 33px;
+    font-size: 22px;
     color: #fff;
     font-weight: 600;
 }
@@ -26,6 +26,21 @@ nav ul {
     display: flex;
     list-style: none;
     z-index: 3;
+}
+
+div.heading {
+    content: "hello";
+    color: white;
+    font-weight: 500;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 16%;
+}
+
+nav .logo, nav ul, nav .menu-btn i {
+    padding: 20px;
 }
 
 nav ul li {
@@ -90,6 +105,12 @@ nav .menu-btn i {
     }
 }
 
+@media (max-width: 575px){
+    nav {
+        height: 160px;
+    }
+}
+
 
 /**
 
@@ -139,6 +160,7 @@ nav .menu-btn i {
     font-weight: 700;
     text-align: center;
     margin-bottom: 80px;
+    color: #112c58;
 }
 
 @media (max-width: 1199px) {
@@ -205,9 +227,17 @@ nav .menu-btn i {
 }
 
 @media (max-width: 575px){
-    /* .container {
+    div.heading {
+        top: 13%;
+        width: 100%;
+        font-size: 27px;
+        line-height: 32px;
+        text-align: center;
+    }
+    
+    .container {
         padding: 30px 30px;
-    } */
+    }
 
     .container h2 {
         font-size: 21px;
