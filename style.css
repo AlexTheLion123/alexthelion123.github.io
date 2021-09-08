@@ -11,9 +11,21 @@ nav {
     height: 300px;
     background: url('https://reapchain.com/assets/img/sub_visual.jpg') no-repeat center;
     background-size: cover;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+div .container-wrap {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    position: relative;
+    height: 100%;
 }
 
 nav .logo {
@@ -28,19 +40,25 @@ nav ul {
     z-index: 3;
 }
 
-div.heading {
-    content: "hello";
+nav div.heading {
     color: white;
     font-weight: 500;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 16%;
+    bottom: 5vh;
+    width: 100%;
+    text-align: center;
+
+    bottom: 100px;
+    font-size: 50px;
+    line-height: 32px;
 }
 
 nav .logo, nav ul, nav .menu-btn i {
     padding: 20px;
+    font-size: 30px;
 }
 
 nav ul li {
@@ -64,6 +82,7 @@ nav ul li a.active{
     color: #1b1b1b;
     background: #fff;
 }
+
 nav .menu-btn i { 
     color: #fff;
     font-size: 22px;
@@ -73,6 +92,17 @@ nav .menu-btn i {
 #click{
     display: none;
 }
+
+
+
+/**
+
+
+General styles media queries
+
+
+ */
+
 @media (max-width: 940px){
     nav .menu-btn i{
         display: block;
@@ -105,9 +135,33 @@ nav .menu-btn i {
     }
 }
 
+@media (max-width: 767px) {
+    nav {
+        height: 160px;
+    }
+
+    nav div.heading {
+        bottom: 50px;
+        font-size: 33px;
+        line-height: 32px;
+    }
+}
+
 @media (max-width: 575px){
     nav {
         height: 160px;
+    }
+
+    nav .logo, nav ul, nav .menu-btn i {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+
+    nav div.heading {
+        bottom: 40px;
+        font-size: 30px;
+        line-height: 32px;
     }
 }
 
@@ -141,12 +195,6 @@ nav .menu-btn i {
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
-.core-heading {
-    text-align: center;
-    margin: 20px;
-    color: black;
-}
-
 .core-members h3 {
     font-size: 20px;
     font-weight: 500;
@@ -155,19 +203,27 @@ nav .menu-btn i {
     margin: 40px 0 10px;
 }
 
-.container h2 {
+.core-members h4 {
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    color: #838383;
+    margin-bottom: 30px;
+}
+
+.container h2.core-heading {
     font-size: 32px;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 80px;
+    margin: 80px;
     color: #112c58;
 }
 
-@media (max-width: 1199px) {
-    .core-members {
-        max-width: 200px;
-    }
+.core-members {
+    max-width: 200px;
+}
 
+@media (max-width: 1199px) {
     .core-members .team-img {
         position: relative;
         display: block;
@@ -203,7 +259,7 @@ nav .menu-btn i {
     }
 
     .core-members img {
-        max-height: 100px;
+        max-height: 200px;
     }
 
     .core-members h3 {
@@ -218,28 +274,15 @@ nav .menu-btn i {
         margin-bottom: 20px;
     }
 
-    .container h2 {
-        font-size: 30px;
-        margin-bottom: 60px;
+    .container h2.core-heading {
+        font-size: 25px;
+        margin: 30px;
     }
-
     
 }
 
-@media (max-width: 575px){
-    div.heading {
-        top: 13%;
-        width: 100%;
-        font-size: 27px;
-        line-height: 32px;
-        text-align: center;
-    }
-    
-    .container {
-        padding: 30px 30px;
-    }
-
-    .container h2 {
+@media (max-width: 575px){   
+    .container h2.core-heading {
         font-size: 21px;
         margin-bottom: 40px;
     }
@@ -250,6 +293,10 @@ nav .menu-btn i {
     }
 
     .core-members img {
-        max-height: 110px;
+        max-height: 150px;
+    }
+
+    .core-members h3 {
+        margin: 10px 0 5px 0;
     }
 }

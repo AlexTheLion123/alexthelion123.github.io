@@ -12,7 +12,7 @@
 </head>
 <body>
     <nav>
-        <div class="logo">Epic ICT</div>
+        <div class="logo">EPIC ICT</div>
         <input type="checkbox" id="click">
         <label for="click" class="menu-btn">
             <i class="fas fa-bars"></i>
@@ -21,10 +21,13 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="courses.html">Courses</a></li>
-            <li><a href="team.html">Team</a></li>
+            <li><a class='active' href="team.html">Team</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a class = 'active' href="contact.html">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
+
+        <div class="heading">ABOUT</div>
+
     </nav>
 </body>
 </html>
