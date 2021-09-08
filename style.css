@@ -1,15 +1,15 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
 }
 
 nav {
     height: 80px;
-    background: #1b1b1b;
+    background: #11264cff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,6 +25,7 @@ nav .logo {
 nav ul {
     display: flex;
     list-style: none;
+    z-index: 3;
 }
 
 nav ul li {
@@ -86,5 +87,139 @@ nav .menu-btn i {
     nav ul li a.active{
         color: cyan;
         background: none;
+    }
+}
+
+
+/**
+
+
+ team.html styles 
+
+
+ */
+
+.core-members-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.core-members {
+    position: relative;
+    width: calc(33.3% - 40px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.core-members img {
+    max-height: 220px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.core-heading {
+    text-align: center;
+    margin: 20px;
+    color: black;
+}
+
+.core-members h3 {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    color: #222;
+    margin: 40px 0 10px;
+}
+
+.container h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+@media (max-width: 1199px) {
+    .core-members {
+        max-width: 200px;
+    }
+
+    .core-members .team-img {
+        position: relative;
+        display: block;
+        cursor: pointer;
+        pointer-events: auto;
+    }
+
+    .core-members img {
+        max-height: 200px;
+    }
+
+    .core-members h3 {
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        color: #222;
+        margin: 40px 0 10px;
+    }
+
+    .core-members h4 {
+        font-size: 18px;
+        font-weight: normal;
+        text-align: center;
+        color: #838383;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .core-members {
+        min-width: 145px;
+        margin: 0 10px;
+    }
+
+    .core-members img {
+        max-height: 100px;
+    }
+
+    .core-members h3 {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 30px 0 5px;
+    }
+
+    .core-members h4 {
+        font-size: 13px;
+        color: #838383;
+        margin-bottom: 20px;
+    }
+
+    .container h2 {
+        font-size: 30px;
+        margin-bottom: 60px;
+    }
+
+    
+}
+
+@media (max-width: 575px){
+    /* .container {
+        padding: 30px 30px;
+    } */
+
+    .container h2 {
+        font-size: 21px;
+        margin-bottom: 40px;
+    }
+
+    .core-members {
+        min-width: 110px;
+        margin: 0 20px;
+    }
+
+    .core-members img {
+        max-height: 110px;
     }
 }
