@@ -526,15 +526,15 @@ courses
 
 .courses-wrapper .course {
     max-width: 330px;
-    /* border: 1px solid rgb(221, 211, 211);  */
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 0px;
     transition: all .27s ease;
+    overflow: hidden;
 }
 
 .courses-wrapper .course:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .courses-wrapper .course-header {
@@ -576,6 +576,10 @@ courses
 }
 
 @media (max-width: 767px){
+    .courses-wrapper {
+        margin: 30px 30px;
+    }
+    
     .courses-wrapper .course .course-header h3 {
         font-size: 20px;
     }
