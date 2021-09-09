@@ -531,6 +531,7 @@ courses
     padding: 0px;
     transition: all .27s ease;
     overflow: hidden;
+    margin: 0 20px 30px;
 }
 
 .courses-wrapper .course:hover {
