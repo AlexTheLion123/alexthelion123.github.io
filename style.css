@@ -586,9 +586,13 @@ courses
     margin-left: 20px;
 }
 
+#courses-container{
+    max-width: 2000px;
+}
+
 @media (max-width: 767px){
     .courses-wrapper {
-        margin: 30px 30px;
+        margin: 30px 5px;
     }
     
     .courses-wrapper .course .course-header h3 {
