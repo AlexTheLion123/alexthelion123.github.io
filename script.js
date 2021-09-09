@@ -1,3 +1,5 @@
+// for team page
+
 const teamBtn = document.querySelector('.team-popup-wrap .popup .popup-header .btn-close');
 const teamWrapper = document.querySelector('.team-popup-wrap')
 const teamImages = document.querySelectorAll('.container .core-members-wrap .core-members img')
@@ -43,3 +45,4 @@ function imageEvent(e){
 }
 
 
+// for courses page
