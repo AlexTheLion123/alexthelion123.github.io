@@ -556,21 +556,31 @@ courses
     font-weight: normal;
 }
 
-.course .course-content p, .course .course-content .extra-details {
+.course .course-content {
     text-align: left;
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
     color: var(--paragraphColor);
     word-break: keep-all;
-    padding: 15px
+    padding: 15px;
 }
 
-.course .course-content .extra-details ul {
-    padding: 5px 0;
+.course .course-content .summary {
+    color: var(--paragraphColor);
+    margin-bottom: 15px;
 }
 
-.course .course-content .extra-details li {
+.course .course-content .extra-details {
+    color: var(--paragraphColor);
+}
+
+.course .course-content ul {
+    color: var(--paragraphColor);
+    padding: 15px 0;
+}
+
+.course .course-content li {
     list-style-type: disc;
     margin-left: 20px;
 }
