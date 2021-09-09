@@ -194,6 +194,7 @@ General styles media queries
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin: 0 20px 60px;
 }
 
 .core-members img {
@@ -226,7 +227,29 @@ General styles media queries
     color: #112c58;
 }
 
+.core-members ul.core-members-career li {
+    position: relative;
+    font-size: 14px;
+    text-align: left;
+    font-weight: 500;
+    line-height: 20px;
+    color: #666;
+    word-break: keep-all;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
 
+.core-members ul.core-members-career li:before {
+    position: absolute;
+    top: 8px;
+    left: -6px;
+    display: block;
+    width: 3px;
+    height: 3px;
+    content: "";
+    border-radius: 50%;
+    background: #666;
+}
 
 @media (max-width: 1199px) {
     .core-members {
@@ -258,6 +281,10 @@ General styles media queries
         text-align: center;
         color: #838383;
         margin-bottom: 30px;
+    }
+
+    .core-members-career {
+        display: none;
     }
 }
 
