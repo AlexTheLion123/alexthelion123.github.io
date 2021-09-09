@@ -386,7 +386,7 @@ General styles media queries
     transform: rotate(45deg);
 }
 
-.team-popup-wrap .popup .popup-header .btn-close::before {
+.team-popup-wrap .popup .popup-header .btn-close::after {
     transform: rotate(135deg);
 }
 
