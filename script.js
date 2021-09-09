@@ -16,8 +16,6 @@ window.addEventListener('resize', e => {
 function addImageListener(){
     // open team-wrapper on image click
     teamImages.forEach(element => {
-        person = element.nextElementSibling.children[0].textContent;
-        position = element.nextElementSibling.children[1].textContent;
         element.addEventListener('click', imageEvent, true)
     });
 
@@ -29,16 +27,16 @@ function addImageListener(){
 
 function removeImageListener(){
     teamImages.forEach(element => {
-        person = element.nextElementSibling.children[0].textContent;
-        position = element.nextElementSibling.children[1].textContent; 
         element.removeEventListener('click', imageEvent,true);
     })
 }
 
 function imageEvent(e){
+    const person = e.target.nextElementSibling.children[0].textContent;
+    const position = e.target.nextElementSibling.children[1].textContent; 
+
     teamWrapper.style.display = 'block';
     const image = e.target.currentSrc;
-
     teamWrapperPerson.textContent = person;
     teamWrapperPosition.textContent = position;        
     teamWrapperImage.src = image;
