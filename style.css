@@ -526,9 +526,15 @@ courses
 
 .courses-wrapper .course {
     max-width: 330px;
-    border: 1px solid rgb(221, 211, 211); 
+    /* border: 1px solid rgb(221, 211, 211);  */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
     padding: 0px;
+    transition: all .27s ease;
+}
+
+.courses-wrapper .course:hover {
+    transform: scale(1.1);
 }
 
 .courses-wrapper .course-header {
@@ -550,7 +556,7 @@ courses
     font-weight: normal;
 }
 
-.course .course-content {
+.course .course-content p, .course .course-content .extra-details {
     text-align: left;
     font-size: 16px;
     font-weight: 500;
@@ -560,11 +566,20 @@ courses
     padding: 15px
 }
 
+.course .course-content .extra-details ul {
+    padding: 5px 0;
+}
+
+.course .course-content .extra-details li {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
 @media (max-width: 767px){
     .courses-wrapper .course .course-header h3 {
         font-size: 20px;
     }
-    .courses-wrapper .course .course-header span {
+    .courses-wrapper .course .course-header p {
         font-size: 18px;
     }
     .course .course-content {
