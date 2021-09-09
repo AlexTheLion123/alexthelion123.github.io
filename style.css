@@ -1,5 +1,13 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
+:root {
+    --lightWhite: #fafafa;
+    --h3Color: #282828;
+    --spanColor: #767879;
+    --paragraphColor: #666;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -233,7 +241,7 @@ General styles media queries
     text-align: left;
     font-weight: 500;
     line-height: 20px;
-    color: #666;
+    color: var(--paragraphColor);
     word-break: keep-all;
     padding-left: 10px;
     margin-bottom: 10px;
@@ -381,7 +389,7 @@ General styles media queries
     padding: 20px 30px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background: #fafafa;
+    background: var(--lightWhite);
 }
 
 .team-popup-wrap .popup .popup-header p {
@@ -445,14 +453,14 @@ General styles media queries
 }
 
 .team-popup-wrap .popup .popup-content .popup-top .team-content p {
-    color: #282828;
+    color: var(--h3Color);
     font-size: 18px;
     font-weight: 500;
     margin: 10px 0 5px;
 }
 
 .team-popup-wrap .popup .popup-content .popup-top .team-content span {
-    color: #767879;
+    color: var(--spanColor);
     font-size: 14px;
     font-weight: 400;
     font-size: 18px;
@@ -507,3 +515,59 @@ General styles media queries
 courses
 
 */
+
+.courses-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 60px;
+}
+
+.courses-wrapper .course {
+    max-width: 330px;
+    border: 1px solid rgb(221, 211, 211); 
+    border-radius: 10px;
+    padding: 0px;
+}
+
+.courses-wrapper .course-header {
+    background: var(--lightWhite);
+    padding: 15px;
+}
+
+
+.courses-wrapper .course .course-header h3 {
+    color: var(--h3Color);
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.courses-wrapper .course .course-header span {
+    color: var(--spanColor);
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.course .course-content {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: var(--paragraphColor);
+    word-break: keep-all;
+    padding: 15px
+}
+
+@media (max-width: 767px){
+    .courses-wrapper .course .course-header h3 {
+        font-size: 20px;
+    }
+    .courses-wrapper .course .course-header span {
+        font-size: 18px;
+    }
+    .course .course-content {
+        font-size: 14px;
+    }
+}
