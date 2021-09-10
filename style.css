@@ -636,8 +636,8 @@ contact
     flex-direction: row;
     flex-wrap: wrap;
     margin: 20px;
-    max-width: 1000px;
     justify-content: center;
+    min-width: 270px
 }
 
 .contact-wrapper .contact-form {
@@ -648,14 +648,14 @@ contact
 .contact-wrapper .icon-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    max-width: 200px;
+    flex-wrap: wrap;
+    justify-content: center;  
 }
 
 .contact-wrapper .icon-container {
-    margin: 12px 0;
+    margin: 12px;
     text-align: center;
-
+    max-width: 200px;
 }
 
 .contact-wrapper .icon-container .icon-content h3{
@@ -729,7 +729,14 @@ textarea {
     resize: none;
 }
 
-
+@media (max-width: 1000px) {
+    .contact-wrapper .icon-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;  
+    }
+}
 
 
 
