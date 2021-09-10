@@ -5,6 +5,7 @@
     --h3Color: #282828;
     --spanColor: #767879;
     --paragraphColor: #666;
+    --lightDark: rgb(239, 239, 239);
 }
 
 
@@ -606,3 +607,126 @@ courses
         font-size: 14px;
     }
 }
+
+
+/**
+
+contact
+
+*/
+
+.contact-wrapper .fas {
+    font-size: 30px;
+    color: rgba(45, 0, 128, 0.815);
+}
+
+#contact-container {
+    display: flex;
+    justify-content: center;
+    height: 500px; 
+}
+
+.contact-wrapper {
+    display: flex;
+    margin: 20px;
+    max-width: 800px;
+    justify-content: center;
+}
+
+.contact-wrapper .icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-wrapper .icon-container {
+    margin: 12px 0;
+    text-align: center;
+
+}
+
+.contact-wrapper .icon-container .icon-content h3{
+    margin: 8px 0 5px 0;
+}
+
+.contact-wrapper .icon-container .icon-content h4 {
+    margin: 5px;
+}
+
+.contact-wrapper .contact-form {
+    margin: 20px;
+}
+
+.contact-wrapper input,
+.contact-wrapper textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 20px 10px;
+    border-radius: 5px;
+    background-color: var(--lightDark);
+}
+
+.contact-wrapper input:focus,
+.contact-wrapper textarea:focus{
+    box-shadow: 0 0 2px rgb(0, 162, 255);
+    border-color: rgb(187, 183, 183);
+}
+
+.contact-wrapper .icon-content h3 {
+    color: var(--h3Color);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.contact-wrapper .icon-content h4 {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    color: #838383;
+    margin-bottom: 30px;
+}
+
+.contact-wrapper .contact-form h2 {
+    margin: 5px 0;
+}
+
+.contact-wrapper .contact-form p {
+    position: relative;
+    font-size: 14px;
+    text-align: left;
+    font-weight: 500;
+    line-height: 20px;
+    color: var(--paragraphColor);
+    word-break: keep-all;
+    margin: 5px 0;
+}
+
+button.standard {
+    padding: 15px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+button.standard:hover {
+    background: rgb(223, 223, 223);
+}
+
+textarea {
+    resize: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
