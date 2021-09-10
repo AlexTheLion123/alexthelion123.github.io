@@ -534,7 +534,7 @@ courses
 .courses-wrapper .course {
     max-width: 330px;
     min-width: 240px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow:  0 0 5px rgba(0, 0, 0, 0.35);
     border-radius: 20px;
     padding: 0px;
     transition: all .27s ease;
