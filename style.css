@@ -6,6 +6,7 @@
     --spanColor: #767879;
     --paragraphColor: #666;
     --lightDark: rgb(239, 239, 239);
+    --iconColor: rgb(87, 57, 187);
 }
 
 
@@ -617,7 +618,7 @@ contact
 
 .contact-wrapper .fas {
     font-size: 30px;
-    color: rgb(57, 124, 187);
+    color: var(--iconColor);
 }
 
 #contact-container {
@@ -706,7 +707,7 @@ button.standard {
     padding: 15px;
     width: 100px;
     border-radius: 5px;
-    background: rgb(57, 103, 187);
+    background: var(--iconColor);
     color: white;
 }
 
