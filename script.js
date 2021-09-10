@@ -45,4 +45,4 @@ function imageEvent(e){
 }
 
 
-// for courses page
+

@@ -120,7 +120,7 @@ General styles media queries
 
  */
 
-@media (max-width: 940px){
+@media (max-width: 950px){
     nav .menu-btn i{
         display: block;
     }
