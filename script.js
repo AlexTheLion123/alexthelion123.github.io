@@ -1,3 +1,7 @@
+// for general
+const logo = document.querySelector('.logo');
+logo.textContent = "EPIC ICT TRAINING CENTRE"
+
 // for team page
 
 const teamBtn = document.querySelector('.team-popup-wrap .popup .popup-header .btn-close');
