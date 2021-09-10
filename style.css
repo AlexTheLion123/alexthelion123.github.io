@@ -617,7 +617,7 @@ contact
 
 .contact-wrapper .fas {
     font-size: 30px;
-    color: rgba(45, 0, 128, 0.815);
+    color: rgb(57, 124, 187);
 }
 
 #contact-container {
@@ -706,7 +706,7 @@ button.standard {
     padding: 15px;
     width: 100px;
     border-radius: 5px;
-    background: rgb(0, 45, 128);
+    background: rgb(57, 103, 187);
     color: white;
 }
 
